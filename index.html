@@ -10,10 +10,18 @@
     <div class="calculator">
         <input type="text" id="display" readonly>
         <div class="buttons">
-            <button class="operator" data-value="√">√</button>
+            <button class="function" data-value="Math.sin(">sin</button>
+            <button class="function" data-value="Math.cos(">cos</button>
+            <button class="function" data-value="Math.tan(">tan</button>
             <button class="operator" data-value="^">x^y</button>
-            <button class="operator" data-value="%">%</button>
-            <button id="backspace">←</button>
+            <button class="function" data-value="Math.log10(">log</button>
+            <button class="function" data-value="Math.log(">ln</button>
+            <button class="constant" data-value="Math.PI">π</button>
+            <button class="constant" data-value="Math.E">e</button>
+            <button class="operator" data-value="(">(</button>
+            <button class="operator" data-value=")">)</button>
+            <button class="function" data-value="Math.sqrt(">√</button>
+            <button class="function" data-value="factorial(">n!</button>
             <button class="number" data-value="7">7</button>
             <button class="number" data-value="8">8</button>
             <button class="number" data-value="9">9</button>
@@ -31,7 +39,10 @@
             <button id="equals">=</button>
             <button class="operator" data-value="+">+</button>
         </div>
-        <button id="clear">C</button>
+        <div class="bottom-buttons">
+            <button id="clear">C</button>
+            <button id="backspace">←</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

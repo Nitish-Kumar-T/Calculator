@@ -36,7 +36,7 @@ body {
 button {
     width: 60px;
     height: 60px;
-    font-size: 20px;
+    font-size: 18px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -53,14 +53,29 @@ button {
     color: white;
 }
 
+.function, .constant {
+    background-color: #a55eea;
+    color: white;
+}
+
+.memory {
+    background-color: #20bf6b;
+    color: white;
+}
+
 #equals {
     background-color: #4CAF50;
     color: white;
 }
 
-#clear {
-    width: 100%;
+.bottom-buttons {
+    display: flex;
+    justify-content: space-between;
     margin-top: 10px;
+}
+
+#clear, #backspace {
+    width: 48%;
     background-color: #f44336;
     color: white;
 }
